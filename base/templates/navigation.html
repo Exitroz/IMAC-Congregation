@@ -1,0 +1,31 @@
+{% load static %}
+<!--  navigation -->
+<div class="nav-bar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="logo">
+            <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+          <div class="navigation-menu">
+            <div id="cssmenu">
+              <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>                                  
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="donate-btn"><a href="donation.html" class="btn btn-default">Donate</a></li>
+                {% comment %} <li class="search-icon"><a href="#"><i class="fa fa-search"></i></a></li> {% endcomment %}
+              </ul>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div> 
+<!--  end navigation -->

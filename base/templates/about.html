@@ -1,144 +1,15 @@
-<!DOCTYPE html>
-<!--
-**********************************************************************************************************
-    Copyright (c) 2017 .
-**********************************************************************************************************  -->
-<!-- 
-Template Name: Church - HTML Template
-Version: 1.0.0
-Author: wp-organic
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]> -->
-<html lang="en">
-<!-- <![endif]-->
-<!-- head -->
+{% extends 'base.html' %}
+{% load static %}
 
-<!-- Mirrored from wporganic.com/html/church/version1/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 17:55:08 GMT -->
-<head>
-<title>Church - HTML Template</title>
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="Church - HTML Template" />
-<meta name="keywords" content="Church HTML Template, church, html template, html theme, church theme,bible, charity, christ, christian, church, churches, events, mosque, non profit, religion, religious, sermon">
-<meta name="author" content="wp-organic" />
-<meta name="MobileOptimized" content="320" />
-<!-- favicon-icon -->
-<link rel="icon" type="image/icon" href="images/favicon/favicon.ico"> 
-<!-- theme style -->
-<!-- bootstrap css -->
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/> 
-<!-- fontawesome css -->
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/> 
-<!-- flat icons css -->
-<link href="css/flaticon.css" rel="stylesheet" type="text/css"/> 
-<!-- google font -->
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-<!-- menu css -->
-<link href="css/menumaker.css" rel="stylesheet" type="text/css"/> 
-<!-- owl carousel css -->
-<link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/> 
-<!-- magnify popup css -->
-<link href="css/magnific-popup.css" rel="stylesheet" type="text/css"/> 
-<!-- datepicker css -->
-<link href="css/datepicker.css" rel="stylesheet" type="text/css"/> 
-<!-- custom css -->
-<link href="css/style.css" rel="stylesheet" type="text/css"/> 
-<!-- end theme style -->
-</head>
-<!-- end head -->
-<!--body start-->
-<body>
-<!-- preloader --> 
-  <div class="preloader">
-    <div class="status">
-      <div class="status-message">
-      </div>
-    </div>
-  </div>
-<!-- end preloader --> 
-<!--  navigation -->
-  <div class="nav-bar navbar-fixed-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-          </div>
-        </div>
-        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-          <div class="navigation-menu">
-            <div id="cssmenu">
-              <ul>
-                <li><a href="#">Home</a>
-                  <ul>
-                    <li><a href="index.html">Home Style 1</a></li>
-                    <li><a href="../version2/index.html">Home Style 2</a></li>
-                  </ul>
-                </li>                                  
-                <li><a href="#">Pages</a>
-                  <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="pastor.html">Pastor</a></li>
-                    <li><a href="pastor-details.html">Pastor Detail</a></li>
-                    <li><a href="ministry.html">Ministry</a></li>
-                    <li><a href="ministry-details.html">Ministry Detail</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="donation-details.html">Donation Detail</a></li>
-                    <li><a href="403-error.html">Error 403</a></li>
-                    <li><a href="404-error.html">Error 404</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Sermons</a>
-                 <ul>
-                    <li><a href="sermons.html">Sermons</a></li>
-                    <li><a href="sermons-details.html">Sermons Detail</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Event</a>
-                 <ul>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="event-details.html">Event Detail</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Blog</a>
-                 <ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog-details.html">Blog Detail</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Gallery</a>
-                 <ul>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="gallery-3-col.html">Gallery 3 Column</a></li>
-                    <li><a href="gallery-3-full-col.html">Gallery 3 Column Fullwidth</a></li>
-                    <li><a href="gallery-4-col.html">Gallery 4 Column</a></li>
-                    <li><a href="gallery-4-full-col.html">Gallery 4 Column Fullwidth</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li class="donate-btn"><a href="donation.html" class="btn btn-default">Donate</a></li>
-                <li class="search-icon"><a href="#"><i class="fa fa-search"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>        
-      </div>
-    </div>
-  </div> 
-<!--  end navigation -->
-<!-- search -->
-  <div class="search">
-    <div class="container clearfix">
-      <input type="search" class="search-box" placeholder="Type anything here...."/>
-      <a href="#" class="fa fa-times search-close"></a>
-    </div>
-  </div>
-<!-- end search -->
+
+
+{% block content %}
+
+{% include 'navigation.html' %}
+
 <!--  Page Banner -->
   <header id="page-banner" class="banner-main-block">
-    <div class="banner-img" style="background-image: url('images/top-banner.jpg')">       
+    <div class="banner-img" style="background-image: url('{% static 'images/top-banner.jpg' %}')">       
       <div class="overlay-bg"></div>
       <div class="container">
         <div class="banner-block">
@@ -156,48 +27,62 @@ Author: wp-organic
   <section id="about-block" class="about-main-block abt-two">
     <div class="container">
       <div class="abt-img">
-        <img src="images/abt/abt-img-01.jpg" class="img-responsive" alt="abt-img-1">
+        <img src="{% static 'images/abt/abt-img-01.jpg' %}" class="img-responsive" alt="abt-img-1">
       </div>
       <div id="abt-slider" class="abt-slider">
         <div class="item abt-block">
           <div class="abt-slider-img">  
-            <img src="images/abt/abt-slider-01.jpg" class="img-responsive" alt="abt-slider-01">
+            <img src="{% static 'images/abt/abt-slider-01.jpg' %}" class="img-responsive" alt="abt-slider-01">
           </div>
         </div>
         <div class="item abt-block">
           <div class="abt-slider-img">  
-            <img src="images/abt/abt-slider-02.jpg" class="img-responsive" alt="abt-slider-02">
+            <img src="{% static 'images/abt/abt-slider-02.jpg' %}" class="img-responsive" alt="abt-slider-02">
           </div>
         </div>
         <div class="item abt-block">
           <div class="abt-slider-img">  
-            <img src="images/abt/abt-slider-03.jpg" class="img-responsive" alt="abt-slider-03">
+            <img src="{% static 'images/abt/abt-slider-03.jpg' %}" class="img-responsive" alt="abt-slider-03">
           </div>
         </div>
         <div class="item abt-block">
           <div class="abt-slider-img">  
-            <img src="images/abt/abt-slider-04.jpg" class="img-responsive" alt="abt-slider-04">
+            <img src="{% static 'images/abt/abt-slider-04.jpg' %}" class="img-responsive" alt="abt-slider-04">
           </div>
         </div>
         <div class="item abt-block">
           <div class="abt-slider-img">  
-            <img src="images/abt/abt-slider-01.jpg" class="img-responsive" alt="abt-slider-05">
+            <img src="{% static 'images/abt/abt-slider-01.jpg' %}" class="img-responsive" alt="abt-slider-05">
           </div>
         </div>
-        <div class="item abt-block">
-          <div class="abt-slider-img">  
-            <img src="images/abt/abt-slider-03.jpg" class="img-responsive" alt="abt-slider-06">
-          </div>
-        </div>
+       
       </div>
       <div class="abt-content">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="abt-sectionOne">
-              <h3 class="abt-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at euismod ex, Maeceans sit amet sollicitudin ex.</h3>
-              <h5 class="abt-subheading">Pellentesque dignissim ultricies commodo. Nulla iaculis leo sollicitudin dui tincidunt egestas. Maecenas eu viverra lacus. Vivamus placerat, diam sed elementum ornare, ipsum leo bibendum ipsum,</h5>
-              <p>Ltiam augue tortor, imperdiet in nisl sit amet, condimentum pharetra ex. Etiam ac maximus magna, a venenatis mauris. Cras ut felis id ligula tincidunt lobortis id et tVestibulum aliquet lorem non purus vulputate, non tempus mi aliquam. Ut semper ante tortor, quis consequat nibh sollicitudin in. Duis tincidunt orci eget elementum sagittis. In nec pharetra nisl, id ultricies dolor. Aliquam laoreet, lacus et imperdiet ultrices, elit ante congue nulla, eget imperdiet nisi massa sit amet nunc. Quisque egestas metus sed metus dignissim sodales. Aenean consequat libero nec malesuada tincidunt. Vivamus finibus massa vitae auctor ullamcorper.</p>
-              <p>Sed tincidunt a urna vitae convallis. Pellentesque dignissim ultricies commodo. Nulla iaculis leo sollicitudin dui tincidunt egestas. Maecenas eu viverra lacus. Vivamus placerat, diam sed elementum ornare, ipsum leo bibendum ipsum, eu facilisis lacus eros a justo. Suspendisse dictum quam vitae tortor iaculis efficitur in quis tortor. Proin vitae sapien sed ante volutpat placerat. Donec tincidunt posuere ex, nec semper magna elementum vel. Donec scelerisque lectus in erat facilisis, rhoncus mollis ex convallis. Duis finibus non nibh id vehicula. Aenean egestas varius neque eu ullamcorper. Nulla auctor ultrices erat non auctor. Duis imperdiet dapibus sem ut accumsan. Ut nisi nisl, rutrum id metus sed, suscipit facilisis quam. Donec dignissim sit amet elit in vehicula.</p>
+              <h3 class="abt-heading">"Institut Missionaire des Amis du Christe"</h3>
+              <p>
+                The Missionary Institute of the Friends of Christ is the English translation of the French acronym IMAC which means "Institut Missionaire des Amis du Christe". IMAC congregation was founded by Archbishop Emery Kabongo Kanundowi on the 5th November, 1991. In November 5th, 1995, a constitution was presented to the friends of Christ as a rule of Life. Consequently, on the 5th October, 2000, the constitution was approved (ad experimentum) by the congregation for the evangelization of people in Rome. The congregation is incardinated in the Catholic archdiocese of Mbeya Tanzania. Archbishop John Gervas is the principal Bishop, making it a congregation of diocesan right. The presence of IMAC Congregation in Nigeria was achievable on the arrival of Archbishop Emery Kabongo Kanundowi on the 29th December, 2007. Since then, the IMAC congregation Nigerian Delegation has continued to grow to this stage.The congregation is under the fatherly watch and guidance of Bishop Hilary Dachelem CMF the Catholic Bishop of Bauchi diocese. Who is  supervising the IMAC Nigerian Delegation.
+              </p>
+              <p>
+                The Missionary institute of the friends of Christ IMAC congregation has 10 priests of Nigerian Delegation and 4 deacons with over 40 seminarians across the major seminaries in Nigeria and Cameroon.
+              </p>
+              <p>
+                Charism: The revelation of Christ's family in prayer and commitment for perfection of charity; the evangelization of the unfortunate; concern for the marginalized; and education of those who are abandoned; as well as Eucharistic Adoration. </p>
+                <p>Apostolate: evangelization in many parts if the world, parish apostolate, schools, chaplaincy, hospital, prison etc. Adoration before the blessed sacrament, taking care of the sick, elderly, the disabled, the orphaned etc.</p>
+                <p>We are religious missionaries of faith givers mission: fidei Donum missionarium.
+                <p>Education of the youth and less privilege in the society.</p>
+                <p>Friends of Christ embrace the challenge if being a missionary where there is friendship, fellowship, sacrifice and selfless love. For wben I was hungry you gave me food, thirsty you gave me drink, naked you clothed me, and imprisoned you visited me. No one can have greater love than to lay down his life for his friends. John 15:13-14
+              </p>
+
+              <p><strong>Four cardinal points of IMAC</strong></p>
+              <ol>
+                <li>Adore the Lord</li>
+                <li>Passing and doing Good</li>
+                <li>Accessibility and availability</li>
+                <li>Community life</li>
+              </ol>
             </div>
           </div>
         </div>
@@ -205,14 +90,19 @@ Author: wp-organic
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div class="abt-block-img">
-                <img src="images/abt/abt-img-02.jpg" class="img-responsive" alt="abt-img-02">
+                <img src="{% static 'images/abt/founder.jpeg' %}" class="img-responsive" alt="abt-img-02">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div class="abt-dtl">
-                <h5 class="abt-subheading">Pellentesque dignissim ultricies commodo. Nulla iaculis leo sollicitudin dui tincidunt egestas.</h5>
-                <p>Ltiam augue tortor, imperdiet in nisl sit amet, condimentum pharetra ex. Etiam ac maximus magna, a venenatis mauris. Cras ut felis id ligula tincidunt lobortis id et tVestibulum aliquet lorem non purus vulputate, non tempus mi aliquam. Ut semper ante tortor, quis consequat nibh sollicitudin in. </p>
-                <p>Duis tincidunt orci eget elementum sagittis. In nec pharetra nisl, id ultricies dolor. Aliquam laoreet, lacus et imperdiet ultrices, elit ante congue nulla, eget imperdiet nisi massa sit amet nunc. Quisque egestas metus sed metus dignissim sodales. Aenean consequat libero nec malesuada tincidunt. Vivamus finibus massa vitae auctor ullamcorper.</p>
+                <h3 class="abt-subheading"><strong>Archbishop Emery Kabongo Kanundowi</strong></h3>
+                <p>
+                  Born in Bena-Kazadi-Tshikula, Democratic Republic of the Congo, on July 22, 1940, he was appointed in 1982 as Pope John Paul II’s second secretary, service that lasted until 1987. He worked side-by-side with John Paul II from 1982 to 1987, traveling alongside the Pope on all his international trips.
+
+                  On December 10, 1987 Pope John Paul II gave him the personal title of Archbishop of Luebo in the Democratic Republic of the Congo, and on January 6, 1988 he received his episcopal order from Pope John Paul II.
+
+                  Before his appointment as Personal Secretary to Pope John Paul II, Archbishop Kabongo was working at the Vatican’s Secretariat of State until, one day, he received a call from the Pope, as he recalls in the book Accanto Giovanni Paolo II (“Side by Side with John Paul II”): “My first memory of John Paul II was when he appointed me as his personal secretary, so that I could help his first secretary, Stanislaw Dziwisz. I didn’t write a letter or ask for an appointment. That’s why I thank him for his Catholic mentality and for thinking that an African would be a good secretary.”
+                </p>
               </div>
             </div>
           </div>          
@@ -223,13 +113,13 @@ Author: wp-organic
 <!--  end about two -->
 <!--  testimonial -->
   <section id="testimonial" class="testimonial-main-block">
-    <div class="parallax" style="background-image: url('images/testimonial/testimonial-bg.jpg')">
+    <div class="parallax" style="background-image: url('{% static 'images/testimonial/testimonial-bg.jpg' %}')">
       <div class="overlay-bg"></div>
       <div id="testimonial-slider" class="testimonial-slider">
         <div class="item testimonial-block">  
           <div class="client-block">
             <div class="client-img">
-              <img src="images/testimonial/testimonial-01.jpg" class="img-responsive" alt="client-img-1">
+              <img src="{% static 'images/testimonial/testimonial-01.jpg' %}" class="img-responsive" alt="client-img-1">
             </div>
             <a href="pastor-details.html"><h4 class="client-id">Wentom Semo</h4></a> 
             <p class="client-post">Senior Pastor</p>
@@ -241,7 +131,7 @@ Author: wp-organic
         <div class="item testimonial-block">  
           <div class="client-block">
             <div class="client-img">
-              <img src="images/testimonial/testimonial-02.jpg" class="img-responsive" alt="client-img-2">
+              <img src="{% static 'images/testimonial/testimonial-02.jpg' %}" class="img-responsive" alt="client-img-2">
             </div>
             <a href="pastor-details.html"><h4 class="client-id">Wentom Semo</h4></a> 
             <p class="client-post">Senior Pastor</p>              
@@ -253,7 +143,7 @@ Author: wp-organic
         <div class="item testimonial-block">  
           <div class="client-block">
             <div class="client-img">
-              <img src="images/testimonial/testimonial-03.jpg" class="img-responsive" alt="client-img-3">
+              <img src="{% static 'images/testimonial/testimonial-03.jpg' %}" class="img-responsive" alt="client-img-3">
             </div>
             <a href="pastor-details.html"><h4 class="client-id">Wentom Semo</h4></a> 
             <p class="client-post">Senior Pastor</p>              
@@ -265,7 +155,7 @@ Author: wp-organic
         <div class="item testimonial-block">  
           <div class="client-block">
             <div class="client-img">
-              <img src="images/testimonial/testimonial-01.jpg" class="img-responsive" alt="client-img-4">
+              <img src="{% static 'images/testimonial/testimonial-01.jpg' %}" class="img-responsive" alt="client-img-4">
             </div>
             <a href="pastor-details.html"><h4 class="client-id">Wentom Semo</h4></a> 
             <p class="client-post">Senior Pastor</p>              
@@ -277,7 +167,7 @@ Author: wp-organic
         <div class="item testimonial-block">  
           <div class="client-block">
             <div class="client-img">
-              <img src="images/testimonial/testimonial-02.jpg" class="img-responsive" alt="client-img-5">
+              <img src="{% static 'images/testimonial/testimonial-02.jpg' %}" class="img-responsive" alt="client-img-5">
             </div>
             <a href="pastor-details.html"><h4 class="client-id">Wentom Semo</h4></a> 
             <p class="client-post">Senior Pastor</p>              
@@ -290,8 +180,9 @@ Author: wp-organic
     </div>
   </section>     
 <!--  end testimonial two -->
+
 <!--  church priest two -->
-  <section id="priest" class="priest-main-block priest-two">
+  {% comment %} <section id="priest" class="priest-main-block priest-two">
     <div class="container">
       <div class="section">
         <h3 class="section-heading">Our Church Priest</h3>
@@ -354,10 +245,11 @@ Author: wp-organic
         </div>
       </div>
     </div>
-  </section>
+  </section> {% endcomment %}
 <!--  end priest two -->
+
 <!--  about contact -->
-  <section id="contact" class="contact-main-block">
+  {% comment %} <section id="contact" class="contact-main-block">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -407,8 +299,9 @@ Author: wp-organic
         </div>
       </div>
     </div>
-  </section>
+  </section> {% endcomment %}
 <!--  end contact -->
+
 <!--  pastor said -->
   <section id="pastor" class="pastor-main-block">
     <div class="parallax" style="background-image: url('images/pastor/pastor-bg.jpg')">
@@ -445,8 +338,9 @@ Author: wp-organic
     </div>
   </section>     
 <!--  end pastor said -->
+
 <!-- supporter -->
-  <section id="supporter" class="supporter-main-block">
+  {% comment %} <section id="supporter" class="supporter-main-block">
     <div class="container-fluid">
       <div class="section text-center">
         <h3 class="section-heading">Thanks To Our Supporter</h3>
@@ -480,179 +374,10 @@ Author: wp-organic
         </div>     
       </div>  
     </div>
-  </section>
+  </section> {% endcomment %}
 <!--  end supporter -->
-<!-- footer -->
-  <footer id="footer" class="footer-main-block">
-    <div class="bg-img" style="background-image: url('images/footer-bg.jpg')">
-      <div class="overlay-bg"></div>
-      <div class="container">
-        <div class="row footer-block">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="footer-logo">
-              <a href="index.html"><img src="images/footer-logo.png" class="img-responsive" alt="footer-logo"></a>
-            </div>
-            <div class="row footer-content">
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><p>Santa Cruz Office:</p></div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"><p>Wporganic Themes<br>Block 145 Antela Road<br>Bredsbin Austrlia </p></div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><p>Phone:</p></div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"><p class="contact-no"><a href="tel:012123456789">012 123 456 789</a><br><a href="tel:012123456789">012 123 456 789</a></p></div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><p>Email:</p></div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                <p class="mail-to"><a href="mailto:wporganic@example.com?Subject=Hello%20again" target="_top">wporganic@example.com</a><br>
-                <a href="mailto:wporganic@example.com?Subject=Hello%20again" target="_top">wporganic@example.com</a></p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">  
-            <div class="footer-section">
-              <h6 class="footer-heading">Recent Posts</h6>
-            </div>
-            <div class="footer-content">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3 footer-post"><a href="blog-details.html"><img src="images/footer/post-thumb-01.jpg" class="img-responsive" alt="post-img-01"></a></div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-9 footer-post"><a href="blog-details.html"><p>Vivamus et tincidunt ligula. Vivamus<br><span class="footer-post-date">12 April 2017</span></p></a></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3 footer-post"><a href="blog-details.html"><img src="images/footer/post-thumb-02.jpg" class="img-responsive" alt="post-img-02"></a></div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-9 footer-post"><a href="blog-details.html"><p>Vivamus et tincidunt ligula. Vivamus<br><span class="footer-post-date">12 April 2017</span></p></a></div>
-              </div> 
-            </div>          
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <div class="footer-section">
-              <h6 class="footer-heading">Our Causes</h6>
-            </div>
-            <div class="accor-widget footer-cause-block">
-              <div class="panel-group cause-panel" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <p class="panel-title question-heading">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="btn btn-default cause-btn cause-btn-minus"><i class="fa fa-minus"></i></span>
-                        <span class="btn btn-default cause-btn cause-btn-plus"><i class="fa fa-plus"></i></span>
-                        Do you have an installation service?
-                      </a>
-                    </p>
-                  </div>
-                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      <p>Dramatically redefine effective users for synergistic e-business.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
-                    <p class="panel-title question-heading">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <span class="btn btn-default cause-btn cause-btn-minus"><i class="fa fa-minus"></i></span>
-                        <span class="btn btn-default cause-btn cause-btn-plus"><i class="fa fa-plus"></i></span>
-                        Are updates free of charge?
-                      </a>
-                    </p>
-                  </div>
-                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                      <p>Dramatically redefine effective users for synergistic e-business.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingThree">
-                    <p class="panel-title question-heading">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <span class="btn btn-default cause-btn cause-btn-minus"><i class="fa fa-minus"></i></span>
-                        <span class="btn btn-default cause-btn cause-btn-plus"><i class="fa fa-plus"></i></span>
-                        Can i use Semona on all projects?
-                      </a>
-                    </p>
-                  </div>
-                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                      <p>Dramatically redefine effective users for synergistic e-business.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>         
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">          
-            <div class="footer-section">
-              <h6 class="footer-heading">Our Gallery</h6>
-            </div>
-            <div class="footer-content portfolio-popup">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/footer/gallery-thumb-01.jpg" class="img-responsive" alt="gallery-thumb-01">
-                  <div class="portfolio-overlay"><a href="images/gallery/gallery-07.jpg"><i class="fa fa-plus"></i></a></div>
-                </div>           
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/footer/gallery-thumb-02.jpg" class="img-responsive" alt="gallery-thumb-02">
-                  <div class="portfolio-overlay"><a href="images/ministry/ministry-leader.jpg"><i class="fa fa-plus"></i></a></div>
-                </div>           
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/footer/gallery-thumb-03.jpg" class="img-responsive" alt="gallery-thumb-03">
-                  <div class="portfolio-overlay"><a href="images/donation/donation-04.jpg"><i class="fa fa-plus"></i></a></div>
-                </div>           
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/footer/gallery-thumb-04.jpg" class="img-responsive" alt="gallery-thumb-04">
-                  <div class="portfolio-overlay"><a href="images/gallery/gallery-06.jpg"><i class="fa fa-plus"></i></a></div>
-                </div>           
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/footer/gallery-thumb-05.jpg" class="img-responsive" alt="gallery-thumb-05">
-                  <div class="portfolio-overlay"><a href="images/gallery/gallery-09.jpg"><i class="fa fa-plus"></i></a></div>
-                </div>           
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/footer/gallery-thumb-06.jpg" class="img-responsive" alt="gallery-thumb-06">
-                  <div class="portfolio-overlay"><a href="images/gallery/gallery-10.jpg"><i class="fa fa-plus"></i></a></div>
-                </div>           
-              </div>                
-            </div>
-          </div>
-        </div>  
-        <div class="row">     
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-dtl text-center">
-            <p>Copyright &copy; 2017 <a href="index.html">Church</a> HTML Template by WP-Organic</p>
-          </div> 
-        </div>
-      </div> 
-    </div>
-  </footer>
-<!-- end footer -->
-<!-- jquery -->
-<!-- jquery library js -->
-<script type="text/javascript" src="js/jquery.min.js"></script> 
-<!-- bootstrap js -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script> 
- <!-- owl carousel js -->
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<!-- mail chimp js -->
-<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script> 
-<!-- smooth scroll js -->
-<script type="text/javascript" src="js/smooth-scroll.js"></script>
-<!-- magnify popup js-->
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script> 
-<!-- menu js--> 
-<script type="text/javascript" src="js/menumaker.js"></script> 
-<!-- price slider js -->
-<script type="text/javascript" src="js/price-slider.js"></script> 
- <!-- event countdown js --> 
-<script type="text/javascript" src="js/jquery.countdown.js"></script> 
-<!-- custom js -->  
-<script type="text/javascript" src="js/theme.js"></script> 
-<!-- end jquery -->
-</body>
-<!--body end -->
 
-<!-- Mirrored from wporganic.com/html/church/version1/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 17:56:06 GMT -->
-</html>
+
+{% include 'footer.html' %}
+
+{% endblock %}
